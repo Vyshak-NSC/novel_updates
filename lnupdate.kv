@@ -1,0 +1,92 @@
+<Screen>:
+    canvas:
+        Rectangle:
+            pos:self.pos
+            size:self.size
+        Color:
+            rgba:1,1,1,1
+        
+    ScrollView:
+        do_scroll_x:False
+        pos:25,-20
+        
+        BoxLayout:
+            id:card_scroll
+            orientation:'vertical'
+            size_hint_y:None
+            height:self.minimum_height
+            spacing:5
+
+            BoxLayout:
+                id:input
+                orientation: 'horizontal'
+                pos:5,root.height-70
+                width:root.width-50
+                size_hint_y: None
+                size_hint_x:None
+                padding: 2
+                height: 100
+                    
+                canvas:
+                    Color:
+                        rgba:0,0,0,1
+                    Line:
+                        rectangle: self.x, self.y, self.width, self.height
+                        width: 1
+                
+                Label:
+                    width:150
+                    height:50
+                    text:"Name:"
+                    size_hint_x:None
+                    color:0,0,0,1
+                        
+                TextInput:
+                    height:100
+                    text:'dimensional descent'
+                    id:novel_name
+                    size_hint_y:None
+                    multiline:False
+                    color:0,0,0,1
+                    cursor_color:0,0,0,1
+                    padding:[5,30,0,0]
+                    
+                Button:
+                    text: "GO"
+                    width:150
+                    size_hint_x:None
+                    background_normal:''
+                    background_color:.18,0.55,1.93
+                    on_press:root.add_card(novel_name.text)
+            Label:
+                size_hint_y:None
+                height:50
+            
+
+
+
+<CardTemplate>:
+    size_hint_y:None
+    height:100
+    id:card_scroll
+    orientation:'horizontal'
+    
+    canvas:
+        Color:
+            rgba:0,0,0,1
+        Line:
+            rectangle:self.x,self.y,self.width-10,self.height
+            width:1
+    
+    Label:
+        id:card_label
+        halign:'left'
+        color:0,0,0,1
+        text_size:(self.width-10, None)
+    
+    Label:
+        id:chapter_name
+        # halign:'right'
+        color:0,0,0,1
+        text_size:(self.width-50,None)
+

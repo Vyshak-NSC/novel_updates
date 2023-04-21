@@ -1,0 +1,94 @@
+[INFO   ] Logger: Record log in /storage/emulated/0/Programming/PythonProjects/KivyFiles/novel_updates/.kivy/logs/kivy_23-04-13_1.txt
+[INFO   ] Kivy: v2.0.0
+[INFO   ] Kivy: Installed at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/__init__.py"
+[INFO   ] Python: v3.9.7 (default, Oct  6 2021, 01:34:26) 
+[GCC 11.1.0]
+[INFO   ] Python: Interpreter at "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/bin/python3"
+[INFO   ] Factory: 186 symbols loaded
+[INFO   ] Image: Providers: img_tex, img_dds, img_sdl2 (img_pil, img_ffpyplayer ignored)
+[INFO   ] Text: Provider: sdl2
+[INFO   ] Window: Provider: sdl2
+[INFO   ] GL: Using the "OpenGL ES 2" graphics system
+[INFO   ] GL: Backend used <sdl2>
+[INFO   ] GL: OpenGL version <b'OpenGL ES 3.2 V@0502.39 (GIT@ec028f8cac, Ic8928a1631, 1661241016) (Date:08/23/22)'>
+[INFO   ] GL: OpenGL vendor <b'Qualcomm'>
+[INFO   ] GL: OpenGL renderer <b'Adreno (TM) 610'>
+[INFO   ] GL: OpenGL parsed version: 3, 2
+[INFO   ] GL: Texture max size <16384>
+[INFO   ] GL: Texture max units <16>
+[INFO   ] Window: auto add sdl2 input provider
+[INFO   ] Window: virtual keyboard not allowed, single mode, not docked
+[INFO   ] GL: NPOT texture support is available
+[WARNING] Base: Unknown <android> provider
+[INFO   ] Base: Start application main loop
+[INFO   ] Base: Leaving application in progress...
+[WARNING] stderr: Traceback (most recent call last):
+[WARNING] stderr:   File "/storage/emulated/0/Programming/PythonProjects/KivyFiles/novel_updates/main.py", line 47, in <module>
+[WARNING] stderr:     LNUpdateApp().run()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/app.py", line 950, in run
+[WARNING] stderr:     runTouchApp()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/base.py", line 582, in runTouchApp
+[WARNING] stderr:     EventLoop.mainloop()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/base.py", line 347, in mainloop
+[WARNING] stderr:     self.idle()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/base.py", line 391, in idle
+[WARNING] stderr:     self.dispatch_input()
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/base.py", line 342, in dispatch_input
+[WARNING] stderr:     post_dispatch_input(*pop(0))
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/base.py", line 248, in post_dispatch_input
+[WARNING] stderr:     listener.dispatch('on_motion', etype, me)
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/core/window/__init__.py", line 1416, in on_motion
+[WARNING] stderr:     self.dispatch('on_touch_up', me)
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/core/window/__init__.py", line 1452, in on_touch_up
+[WARNING] stderr:     if w.dispatch('on_touch_up', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/uix/widget.py", line 567, in on_touch_up
+[WARNING] stderr:     if child.dispatch('on_touch_up', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/uix/scrollview.py", line 950, in on_touch_up
+[WARNING] stderr:     if self.dispatch('on_scroll_stop', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/uix/scrollview.py", line 989, in on_scroll_stop
+[WARNING] stderr:     self.simulate_touch_down(touch)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/uix/scrollview.py", line 668, in simulate_touch_down
+[WARNING] stderr:     ret = super(ScrollView, self).on_touch_down(touch)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/uix/widget.py", line 545, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/uix/widget.py", line 545, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/uix/widget.py", line 545, in on_touch_down
+[WARNING] stderr:     if child.dispatch('on_touch_down', touch):
+[WARNING] stderr:   File "kivy/_event.pyx", line 709, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/uix/behaviors/button.py", line 151, in on_touch_down
+[WARNING] stderr:     self.dispatch('on_press')
+[WARNING] stderr:   File "kivy/_event.pyx", line 705, in kivy._event.EventDispatcher.dispatch
+[WARNING] stderr:   File "kivy/_event.pyx", line 1248, in kivy._event.EventObservers.dispatch
+[WARNING] stderr:   File "kivy/_event.pyx", line 1132, in kivy._event.EventObservers._dispatch
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/kivy/lang/builder.py", line 57, in custom_callback
+[WARNING] stderr:     exec(__kvlang__.co_value, idmap)
+[WARNING] stderr:   File "/storage/emulated/0/Programming/PythonProjects/KivyFiles/novel_updates/lnupdate.kv", line 60, in <module>
+[WARNING] stderr:     on_press:root.add_card(novel_name.text)
+[WARNING] stderr:   File "/storage/emulated/0/Programming/PythonProjects/KivyFiles/novel_updates/main.py", line 26, in add_card
+[WARNING] stderr:     chap = self.get_chap(text)
+[WARNING] stderr:   File "/storage/emulated/0/Programming/PythonProjects/KivyFiles/novel_updates/main.py", line 38, in get_chap
+[WARNING] stderr:     inst.run()
+[WARNING] stderr:   File "/storage/emulated/0/Programming/PythonProjects/KivyFiles/novel_updates/util.py", line 50, in run
+[WARNING] stderr:     self.notify_msg()
+[WARNING] stderr:   File "/storage/emulated/0/Programming/PythonProjects/KivyFiles/novel_updates/util.py", line 37, in notify_msg
+[WARNING] stderr:     notif.notify(title=msg_title,message=msg)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/plyer/facades/notification.py", line 84, in notify
+[WARNING] stderr:     self._notify(
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/plyer/platforms/android/notification.py", line 191, in _notify
+[WARNING] stderr:     self._set_open_behavior(noti)
+[WARNING] stderr:   File "/data/user/0/ru.iiec.pydroid3/files/aarch64-linux-android/lib/python3.9/site-packages/plyer/platforms/android/notification.py", line 153, in _set_open_behavior
+[WARNING] stderr:     pending_intent = PendingIntent.getActivity(
+[WARNING] stderr:   File "jnius/jnius_export_class.pxi", line 1145, in jnius.jnius.JavaMultipleMethod.__call__
+[WARNING] stderr:   File "jnius/jnius_export_class.pxi", line 856, in jnius.jnius.JavaMethod.__call__
+[WARNING] stderr:   File "jnius/jnius_export_class.pxi", line 1028, in jnius.jnius.JavaMethod.call_staticmethod
+[WARNING] stderr:   File "jnius/jnius_utils.pxi", line 91, in jnius.jnius.check_exception
+[WARNING] stderr: jnius.jnius.JavaException: JVM exception occurred: ru.iiec.pydroid3: Targeting S+ (version 31 and above) requires that one of FLAG_IMMUTABLE or FLAG_MUTABLE be specified when creating a PendingIntent.
+[WARNING] stderr: Strongly consider using FLAG_IMMUTABLE, only use FLAG_MUTABLE if some functionality depends on the PendingIntent being mutable, e.g. if it needs to be used with inline replies or bubbles. java.lang.IllegalArgumentException
